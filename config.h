@@ -169,7 +169,6 @@ static unsigned int defaultattr = 11;
 static uint forcemousemod = ShiftMask;
 
 /*
-<<<<<<< HEAD
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
@@ -206,8 +205,6 @@ ResourcePref resources[] = {
 };
 
 /*
-=======
->>>>>>> scroll
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
@@ -240,6 +237,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_Escape,      keyboard_select,{.i =  0} },
 };
 
 /*
